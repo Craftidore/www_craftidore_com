@@ -1,0 +1,31 @@
+html {
+    width: 100%;
+}
+@media (max-width: 800px) {
+    main {
+        padding-right: 5px;
+        padding-left: 5px;
+        font-size: 20pt;
+    }
+}
+@media (min-width: 801px) {
+    main {
+        margin: auto;
+        max-width: 700px;
+        font-size: 14pt;
+    }
+}
+pre {
+    font-size: 20pt;
+    border-radius: 3px;
+    padding: 3px;
+    background-color: #a0a0a0;
+}
+
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}

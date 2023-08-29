@@ -1,0 +1,2 @@
+[18-Jul-2023 22:09:59 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/customer/iroe-lore/index.php on line 10
+[18-Jul-2023 23:33:57 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting ';' or ',' in /home/customer/iroe-lore/index.php on line 26

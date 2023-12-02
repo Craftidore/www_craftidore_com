@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Elliot's Website Design</title>
+    <title>Elliot's Website</title>
     <meta charset="utf-8">
 </head>
 <body>
 <header>
-    <h1>Craftidore Website Design</h1>
+    <h1>Craftidore's Website, under construction</h1>
+<!--
     <div class="navbar">
         <div><a href="/">Home</a></div>
         <div><a href="/">Example Sites</a></div>
@@ -35,5 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] === "GET") {
 <div id="privacy"><a href="/privacy">Privacy</a></div>
 <div id="license"><a href="/license">License</a></div>
 </footer>
+-->
 </body>
 </html>

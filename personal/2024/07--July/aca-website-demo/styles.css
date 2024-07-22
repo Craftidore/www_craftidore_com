@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+.titlebar {
+    background-color: #ddd;
+}
+.titlebar > .nav {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding-inline-start: 0;
+}
+.titlebar > .nav > li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.titlebar > .nav > li > * {
+    padding: 10px;
+}
+.titlebar > h1 {
+    text-align: center;
+}
+
+#main {
+    max-width: 1000px;
+    width: fit-content;
+    margin: auto;
+}
+

@@ -1,0 +1,12 @@
+
+Name     | Control | Sense | Alter
+Consular | X       |       | X    
+Guardian |         | X     | X   
+Mystic   | X       | X     | X    
+Seeker   | X       | X     |       
+Sentinel |         | X     | X     
+Warrior  | X       |       | X     
+
+Emergent:            X
+Exile:                       X
+Outcast:   X

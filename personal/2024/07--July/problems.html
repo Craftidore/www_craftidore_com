@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Problems for Spencer</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <main>
+    <h1>Problems for Spencer</h1>
+    <section>
+        <h2>Problem 1: Very Easy</h2>
+        <p>
+        Accept a number of arguments, then read in that many integers. Calculate the mean of those integers and print it out. The mean should be a double.
+        </p>
+        <p>Example Input:</p>
+        <pre><code>5
+1 2 3 4 5</code></pre>
+        <p>Example Output:</p>
+        <pre><code>3.0</code></pre>
+        <p>Example Input:</p>
+        <pre><code>11
+34 20 40 88 945 12 3 -6 96 92 92</code></pre>
+        <p>Example Output:</p>
+        <pre><code>128.727272</code></pre>
+    </section>
+    <section>
+        <h2>Problem 2: Easy</h2>
+        <p>
+        Accept a number of arguments, then read in that many space-separated words. Print them out sorted alphabetically, ignoring case.
+        Do <strong>not</strong> use any built-in sort function or functionality of the language you're using.
+        There are no speed requirements here, so using bubble sort is fine.
+        </p>
+        <p>Example Input:</p>
+        <pre><code>7
+kitchen office television door satchel window lamp</code></pre>
+        <p>Example Output:</p>
+        <pre><code>door kitchen lamp office satchel television window</code></pre>
+        <p>Example Input:</p>
+        <pre><code>11
+kiTChEn OFFICE Television doOr satchel WindoW lAMP</code></pre>
+        <p>Example Output:</p>
+        <pre><code>doOr kiTCHEn lAMP OFFICE satchel Television WindoW</code></pre>
+    </section>
+    <section>
+        <h2>Problem 3: Medium</h2>
+        <p>
+        Accept an x size and a y size (integers), then read in that many letters, ignoring whitespace.
+        Start at 0,0 (top-left corner) and find the shortest number of cardinal moves (left-right-up-down, no diagonal) it would take to reach the bottom right corner.
+        You may not move through the <code>x</code> characters and may not move outside the map.
+        </p>
+        <p>Example Input:</p>
+        <pre><code>6 5
+......
+......
+......
+......
+......</code></pre>
+        <p>Example Output:</p>
+        <pre><code>9</code></pre>
+        <p>Example Input:</p>
+        <pre><code>6 5
+.x....
+.x.xx.
+.x.x..
+.x.x.x
+...x..
+</code></pre>
+        <p>Example Output:</p>
+        <pre><code>19</code></pre>
+        <p>Example Input:</p>
+        <pre><code>10 10
+...x......
+.x.....x..
+.xxxxx.xxx
+.x.....x..
+.x.x..xx.x
+.x.x......
+.xxxxxxxx.
+.x...x....
+.x.x.x.x..
+...x...x..
+</code></pre>
+        <p>Example Output:</p>
+        <pre><code>20</code></pre>
+    </section>
+    <section>
+        <h2>Problem 4: Easy</h2>
+        <p>
+        Read in space-separated words until 'end' then read in words until 'end' <em>again</em>. Print out any words in the second batch that aren't present in the first batch.
+        </p>
+        <p>Example Input:</p>
+        <pre><code>apple banana cookie danish eggs end apple biscut cereal end</code></pre>
+        <p>Example Output:</p>
+        <pre><code>biscut cereal</code></pre>
+        <p>Example Input:</p>
+        <pre><code>Foust Adair Ragsdale Hunt Fields McCown end Foust Ragsdale Baird Steil Fields McCown end</code></pre>
+        <p>Example Output:</p>
+        <pre><code>Baird Steil</code></pre>
+    </section>
+    </main>
+</body>
+</html>

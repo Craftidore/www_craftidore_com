@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head><title>
+        Chapter 14 - Elliot Hodge and Ty Bates
+    </title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="reveal.js-master/dist/reveal.css">
+		<link rel="stylesheet" href="reveal.js-master/dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js-master/plugin/highlight/monokai.css">
+    </head>
+    <body>
+
+<!--
+   Ch 14
+      Engineering approximations: orders of magnitude
+      Responsiveness vs. performance
+      Time constraints of the brain
+      Important deadlines for human-computer interaction:
+         0.1 sec: perception of cause and effect, feedback for click operation, display busy indicators
+         1 sec: display progress indicators for long operations
+         10 sec: completing one step in a wizard
+      Meeting real-time human interaction deadlines and UI considerations
+      Guidelines for designing effective progress indicators
+-->
+
+		<div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1>We Have Time Requirements</h1>
+                    <small>Presentation by Ty Bates and Elliot Hodge</small>
+                </section>
+                <section>
+                    <h2>Performance != Responsiveness</h2>
+                </section>
+                <section>
+                    <div>
+                        <h2>
+                            Performance: 
+                        </h2>
+                        <ul>
+                            <li>Computation over time</li>
+                            <li>Processing large amounts of input quickly</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h2>
+                            Responsiveness:
+                        </h2>
+                        <ul>
+                            <li>User perception of app speed</li>
+                            <li>Acknowledging user input quickly</li>
+                            <li>Keeping the user informed</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <p>
+                        Responsiveness matters more to user experience than performance.
+                    </p>
+                </section>
+                <section>
+                    <h2>Question #1</h2>
+                    <blockquote>
+                        What are some examples of unresponsive websites or applications you have used?
+                    </blockquote>
+                    <p><em><small>(Aside from Pipeline)</small></em></p>
+                </section>
+                <section>
+                    <h2>Important Deadlines</h2>
+                    <p>Guidelines for Responsiveness concern which operations must be completed or acknowledged within a given order of magnitude of time.</p>
+                </section>
+                <section>
+                    <h3>Orders of Magnitude</h3>
+                    <p>Earthquakes and Responsiveness [x]</p>
+                    <small>
+                        <table>
+                            <tr><th>Magnitude</th><th>Degree</th><th>Result</th></tr>
+                            <tr><td>2.0</td><td>100</td><td>Earthquake which can't be felt</td></tr>
+                            <tr><td>3.0</td><td>1000</td><td>Tremors can be felt</td></tr>
+                            <tr><td>4.0</td><td>10000</td><td>Things are falling off shelves</td></tr>
+                            <tr><td colspan="4">...</td></tr>
+                            <tr><td>6.0</td><td>1000000</td><td>Severe damage across up to 100 miles.</td></tr>
+                            <tr><td colspan="4">...</td></tr>
+                            <tr><td>15.0</td><td>1000000000000000</td><td>The Earth is ripped apart. [What If]</td></tr>
+                        </table>
+                    </small>
+                    <!-- Citations: https://web.archive.org/web/20210803200647/https://www.gns.cri.nz/Home/Learning/Science-Topics/Earthquakes/Monitoring-Earthquakes/Other-earthquake-questions/What-is-the-Richter-Magnitude-Scale -->
+                </section>
+                <section>
+                    <h3>Less than 0.1 seconds</h3>
+                    <small>
+                        <table>
+                            <!-- <tr><th>Gap</th><th>Reason</th></tr> -->
+                            <tr class="fragment" data-fragment-index="1"><th colspan="2">Audio</th></tr>
+                            <tr class="fragment" data-fragment-index="1"><td>0.001</td><td>Gaps in audio are detectable</td></tr>
+                            <tr class="fragment" data-fragment-index="1"><td>0.01</td><td>Distinct Auditory Tones (<strong>FIXME: Need more detail</strong>)</td></tr>
+                            <tr class="fragment" data-fragment-index="2"><th colspan="2">Hand-Eye Coordination</th></tr>
+                            <tr class="fragment" data-fragment-index="2"><td>0.01</td><td>Digital Ink Lag</td></tr>
+                            <tr class="fragment" data-fragment-index="2"><td>0.01</td><td>Mouse Movements (Sources Disagree [gnome guidelines] [joltfly])</td></tr>
+                        </table>
+                    </small>
+                </section>
+                <section>
+                    <h3>About 0.1 seconds</h3>
+                    <small>
+                        <table>
+                            <tr><td>0.1</td><td>Cause and effect</td></tr>
+                            <tr><td>0.1</td><td>Subitizing</td></tr>
+                            <tr><td>0.1</td><td>Audiovisual lock</td></tr>
+                            <tr><td>0.1</td><td>Vision Suppression</td></tr>
+                        </table>
+                    </small>
+                </section>
+                <section>
+                    <h3>About 1 second</h3>
+                    <p>TODO: Incomplete Slide</p>
+                </section>
+                <section>
+                    <h3>About 10 seconds</h3>
+                    <p>TODO: Incomplete Slide</p>
+                </section>
+                <section>
+                    <h2>Guidelines on the Desktop</h2>
+                </section>
+                <section>
+                    TODO: Gnome Guidelines slides here
+                </section>
+                <section>
+                    <h2>Designing To Meet Real-Time Human-Interaction Deadlines</h2>
+                </section>
+                <section>
+                    <em>Immediately</em> acknowledge user clicks.
+                </section>
+                <section>
+                    TODO: WoW screenshot HERE
+                </section>
+                <section>
+                    <img src="./chromium-downloading.gif" width="70%">
+                </section>
+                <section>
+                    <h2>Jellyfin Menu Items</h2>
+                    <img style="filter: brightness(150%)"src="./crafti-jellyfin-server.gif">
+                    <img class="fragment" style="filter: brightness(150%)"src="./dan-jellyfin-server-single.gif">
+                    <img class="fragment" style="filter: brightness(150%)"src="./dan-jellyfin-server-many.gif">
+                </section>
+                <section>
+                    <h2>Question #2</h2>
+                    <img src="./dan-jellyfin-server-single.gif">
+                    <blockquote>
+                        How would you keep Jellyfin's<br>UI responsive even when<br>the user has bad ping?
+                    </blockquote>
+                </section>
+                <section>
+                    <p>Permit users to abort lengthy operations.</p>
+                    TODO: Screenshot of project 1.
+                </section>
+                <section>
+                    <h2>When Can We Delay?</h2>
+                </section>
+                <section>
+                    TODO: Screenshots of busy indicators
+                </section>
+                <section>
+                    <img src="./bad-loading.gif" width="60%">
+                    <img class="fragment" src="./bad-loading-404.png" width="30%" height="20%">
+                    [stienmetz]
+                </section>
+                <section>
+                    <h2>Don't interrupt unit tasks</h2>
+                    <img class="fragment" data-fragment-index="1" src="./NewYorkTimesAds.png" width="90%">
+                    <p class="fragment" data-fragment-index="1">[newyorktimes]</p>
+                </section>
+                <section>
+                    <h2>Question #3</h2>
+                    <blockquote>Can anyone think of an example of when you've been interrupted mid-unit-task?</blockquote>
+                </section>
+                <section>
+                    <h2>Guidelines for Progress Indicators</h2>
+                </section>
+                <section>
+                    <h2>KDE's Progress Indicators</h2>
+                    <img src="./file-transfer-kde-1-cropped.png" height="20%">
+                    <img src="./file-transfer-kde-2.png" height="20%">
+                </section>
+                <section>
+                    <h2>Don't Use Static Progress Indicators</h2>
+                    <img src="./static-loading-indicator.jpg">
+                </section>
+                <section>
+                    <h2>Progress Bar Best Practices</h2>
+                    <ul>
+                        <li>Work remaining</li>
+                        <li class="fragment">1%/100%</li>
+                        <li class="fragment">Avoid Jumpy Progress Bars</li>
+                        <li class="fragment">Use human-scale precision</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Sources</h1>
+                    <small>
+                        <ul>
+                            <li>[x] https://web.archive.org/web/20210803200647/https://www.gns.cri.nz/Home/Learning/Science-Topics/Earthquakes/Monitoring-Earthquakes/Other-earthquake-questions/What-is-the-Richter-Magnitude-Scale</li>
+                            <li>[x] What If? by Randall Munroe</li>
+                            <li>[x] https://joltfly.com/mouse-latency-test/</li>
+                            <li>[x] MISSING LINK New York Times</li>
+                            <li>[x] https://www.steinmetz-reuter.de/grabinschriften.html</li>
+                        </ul>
+                    </small>
+                </section>
+            </div>
+		</div>
+
+		<script src="reveal.js-master/dist/reveal.js"></script>
+		<script src="reveal.js-master/plugin/zoom/zoom.js"></script>
+		<script src="reveal.js-master/plugin/notes/notes.js"></script>
+		<script src="reveal.js-master/plugin/search/search.js"></script>
+		<script src="reveal.js-master/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js-master/plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+    </body>
+</html>

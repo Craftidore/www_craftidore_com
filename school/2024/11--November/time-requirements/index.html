@@ -76,7 +76,7 @@
                 </section>
                 <section>
                     <h3>Orders of Magnitude</h3>
-                    <p>Earthquakes and Responsiveness [x]</p>
+                    <p>Earthquakes and Responsiveness [0]</p>
                     <small>
                         <table>
                             <tr><th>Magnitude</th><th>Degree</th><th>Result</th></tr>
@@ -86,7 +86,7 @@
                             <tr><td colspan="4">...</td></tr>
                             <tr><td>6.0</td><td>1000000</td><td>Severe damage across up to 100 miles.</td></tr>
                             <tr><td colspan="4">...</td></tr>
-                            <tr><td>15.0</td><td>1000000000000000</td><td>The Earth is ripped apart. [What If]</td></tr>
+                            <tr><td>15.0</td><td>1000000000000000</td><td>The Earth is ripped apart. [1]</td></tr>
                         </table>
                     </small>
                     <!-- Citations: https://web.archive.org/web/20210803200647/https://www.gns.cri.nz/Home/Learning/Science-Topics/Earthquakes/Monitoring-Earthquakes/Other-earthquake-questions/What-is-the-Richter-Magnitude-Scale -->
@@ -95,13 +95,13 @@
                     <h3>Less than 0.1 seconds</h3>
                     <small>
                         <table>
-                            <!-- <tr><th>Gap</th><th>Reason</th></tr> -->
+                            <tr><th>Seconds</th><th>Action</th></tr>
                             <tr class="fragment" data-fragment-index="1"><th colspan="2">Audio</th></tr>
                             <tr class="fragment" data-fragment-index="1"><td>0.001</td><td>Gaps in audio are detectable</td></tr>
-                            <tr class="fragment" data-fragment-index="1"><td>0.01</td><td>Distinct Auditory Tones (<strong>FIXME: Need more detail</strong>)</td></tr>
+                            <tr class="fragment" data-fragment-index="1"><td>0.01</td><td>Distinct Auditory Tones</td></tr>
                             <tr class="fragment" data-fragment-index="2"><th colspan="2">Hand-Eye Coordination</th></tr>
                             <tr class="fragment" data-fragment-index="2"><td>0.01</td><td>Digital Ink Lag</td></tr>
-                            <tr class="fragment" data-fragment-index="2"><td>0.01</td><td>Mouse Movements (Sources Disagree [gnome guidelines] [joltfly])</td></tr>
+                            <tr class="fragment" data-fragment-index="2"><td>0.01</td><td>Mouse Movements (Sources disagree [2] [3])</td></tr>
                         </table>
                     </small>
                 </section>
@@ -109,6 +109,7 @@
                     <h3>About 0.1 seconds</h3>
                     <small>
                         <table>
+                            <tr><th>Seconds</th><th>Action</th></tr>
                             <tr><td>0.1</td><td>Cause and effect</td></tr>
                             <tr><td>0.1</td><td>Subitizing</td></tr>
                             <tr><td>0.1</td><td>Audiovisual lock</td></tr>
@@ -118,17 +119,39 @@
                 </section>
                 <section>
                     <h3>About 1 second</h3>
-                    <p>TODO: Incomplete Slide</p>
+                    <small>
+                        <table>
+                            <tr><th>Seconds</th><th>Action</th></tr>
+                            <tr><td>1</td><td>Indirect (Topical) Cause and Effect</td></tr>
+                            <tr><td>1</td><td>Display Progress Indicators</td></tr>
+                            <tr><td>1</td><td>User Response to the Unexpected</td></tr>
+                        </table>
+                    </small>
                 </section>
                 <section>
                     <h3>About 10 seconds</h3>
-                    <p>TODO: Incomplete Slide</p>
+                    <small>
+                        <table>
+                            <tr><th>Seconds</th><th>Action</th></tr>
+                            <tr><td>10</td><td>Short Term Memory Duration</td></tr>
+                            <tr><td>10</td><td>Average Unit Task Duration</td></tr>
+                        </table>
+                    </small>
                 </section>
                 <section>
                     <h2>Guidelines on the Desktop</h2>
+                    <img src="./gnome47.webp" width="80%">
+                    <p>[4]</p>
                 </section>
                 <section>
-                    TODO: Gnome Guidelines slides here
+                    <h2>Gnome: Human Interface Guidelines</h2>
+                    <img src="./gnome-max-times.png" >
+                    <p>[2]</p>
+                </section>
+                <section>
+                    <h2>Gnome: Checklist Progress Bars</h2>
+                    <img src="./gnome-checklist.png">
+                    <p>[5]</p>
                 </section>
                 <section>
                     <h2>Designing To Meet Real-Time Human-Interaction Deadlines</h2>
@@ -137,16 +160,20 @@
                     <em>Immediately</em> acknowledge user clicks.
                 </section>
                 <section>
-                    TODO: WoW screenshot HERE
+                    <h4>Free users to do other things while waiting for a function to finish</h4>
+                    <img src="./wow-install.png" width="60%">
+                    <p>[6]</p>
                 </section>
                 <section>
                     <img src="./chromium-downloading.gif" width="70%">
+                    <p>[7]</p>
                 </section>
                 <section>
                     <h2>Jellyfin Menu Items</h2>
                     <img style="filter: brightness(150%)"src="./crafti-jellyfin-server.gif">
                     <img class="fragment" style="filter: brightness(150%)"src="./dan-jellyfin-server-single.gif">
                     <img class="fragment" style="filter: brightness(150%)"src="./dan-jellyfin-server-many.gif">
+                    <p>[8]</p>
                 </section>
                 <section>
                     <h2>Question #2</h2>
@@ -157,23 +184,25 @@
                 </section>
                 <section>
                     <p>Permit users to abort lengthy operations.</p>
-                    TODO: Screenshot of project 1.
+                    <img src="./PhotoEditorExample.png">
                 </section>
                 <section>
                     <h2>When Can We Delay?</h2>
                 </section>
                 <section>
-                    TODO: Screenshots of busy indicators
+                    <p>Display a busy indicator for any function that blocks further user actions while it is executing</p>
+                    <img src="./BusyIndicators.png"> 
+                    <p>[9]</p>
                 </section>
                 <section>
                     <img src="./bad-loading.gif" width="60%">
                     <img class="fragment" src="./bad-loading-404.png" width="30%" height="20%">
-                    [stienmetz]
+                    <p>[10]</p>
                 </section>
                 <section>
                     <h2>Don't interrupt unit tasks</h2>
                     <img class="fragment" data-fragment-index="1" src="./NewYorkTimesAds.png" width="90%">
-                    <p class="fragment" data-fragment-index="1">[newyorktimes]</p>
+                    <p class="fragment" data-fragment-index="1">[11]</p>
                 </section>
                 <section>
                     <h2>Question #3</h2>
@@ -186,10 +215,12 @@
                     <h2>KDE's Progress Indicators</h2>
                     <img src="./file-transfer-kde-1-cropped.png" height="20%">
                     <img src="./file-transfer-kde-2.png" height="20%">
+                    <p>[12]</p>
                 </section>
                 <section>
                     <h2>Don't Use Static Progress Indicators</h2>
                     <img src="./static-loading-indicator.jpg">
+                    <p>[13]</p>
                 </section>
                 <section>
                     <h2>Progress Bar Best Practices</h2>
@@ -201,14 +232,38 @@
                     </ul>
                 </section>
                 <section>
+                    <h1>Conclusion</h1>
+                    <blockquote style="font-size: 80%;" cite="Gnome HIG, 2.2.3, Characteristics of Responsivene Applications">
+                        Highly responsive applications put users in control by quickly acknowledging each user request, by providing continuous feedback about progress toward fulfilling each request, and by letting users complete tasks without unacceptable delays.
+                    </blockquote>
+                    <p>[14]</p>
+                </section>
+                <section>
                     <h1>Sources</h1>
                     <small>
                         <ul>
-                            <li>[x] https://web.archive.org/web/20210803200647/https://www.gns.cri.nz/Home/Learning/Science-Topics/Earthquakes/Monitoring-Earthquakes/Other-earthquake-questions/What-is-the-Richter-Magnitude-Scale</li>
-                            <li>[x] What If? by Randall Munroe</li>
-                            <li>[x] https://joltfly.com/mouse-latency-test/</li>
-                            <li>[x] MISSING LINK New York Times</li>
-                            <li>[x] https://www.steinmetz-reuter.de/grabinschriften.html</li>
+                            <li>[0] https://web.archive.org/web/20210803200647/https://www.gns.cri.nz/Home/Learning/Science-Topics/Earthquakes/Monitoring-Earthquakes/Other-earthquake-questions/What-is-the-Richter-Magnitude-Scale</li>
+                            <li>[1] What If? by Randall Munroe</li>
+                            <li>[2] https://web.archive.org/web/20190322144522/https://developer.gnome.org/hig-book/3.12/feedback-response-times.html.en</li>
+                            <li>[3] https://joltfly.com/mouse-latency-test/</li>
+                            <li>[4] https://9to5linux.com/gnome-47-denver-desktop-environment-officially-released-heres-whats-new</li>
+                            <li>[5] https://web.archive.org/web/20180623235535/https://developer.gnome.org/hig-book/3.12/feedback-types.html.en</li>
+                            <li>[6] http://www.webupd8.org/2014/09/how-to-install-world-of-warcraft-in.html</li>
+                            <li>[7] Chromium v131.0.6778.69</li>
+                            <li>[8] https://dbarenholz.hopto.org/jellyfin</li>
+                            <li>[9] https://uxdesign.cc/loading-progress-indicators-ui-components-series-f4b1fc35339a</li>
+                        </ul>
+                    </small>
+                </section>
+                <section>
+                    <h1>Sources cont.</h1>
+                    <small>
+                        <ul>
+                            <li>[10] https://www.steinmetz-reuter.de/grabinschriften.html</li>
+                            <li>[11] https://www.nytimes.com/</li>
+                            <li>[12] Dolphin v24.08.3</li>
+                            <li>[13] https://www.nngroup.com/articles/progress-indicators/</li>
+                            <li>[14] https://web.archive.org/web/20180514184330/https://developer.gnome.org/hig-book/3.12/feedback-responsiveness.html.en</li>
                         </ul>
                     </small>
                 </section>

@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+    <title>Christmas Message for Sam</title>
+    <script>
+        function doStuff(event) {
+            event.preventDefault();
+            const main = document.querySelector('#main');
+            const adjective = document.querySelector('#adjective').value;
+            const punctuation = document.querySelector('#punctuation').value;
+            main.innerHTML = `<p>${adjective} Christmas${punctuation}</p>`;
+        }
+        document.addEventListener("DOMContentLoaded", (event) => {
+            const main = document.querySelector('#main');
+            main.addEventListener('submit', doStuff);
+        });
+    </script>
+    <style>
+        * {
+            font-size: 20px;
+        }
+        body {
+            margin: auto;
+        }
+        #main {
+            margin: 10px 60px 0px 60px;
+            max-width: 600px
+        }
+        label {
+            margin-right: 5px;
+        }
+    </style>
+    <body>
+        <div id="main">
+            <form>
+                <div>
+                    <label for="adjective">Preferred Adjective</label><input type="text" name="adjective" id="adjective" value="LeFun">
+                </div>
+                <div>
+                    <label for="punctuation">Preferred Punctuation</label><input type="text" name="punctuation" id="punctuation" value="?">
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
